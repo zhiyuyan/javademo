@@ -1,20 +1,19 @@
-//package create;
+//package Transforming;
 //
 //import rx.Observable;
-//import rx.Observer;
-//import rx.Subscription;
-//import rx.schedulers.Schedulers;
+//import rx.Subscriber;
 //
-//import java.util.concurrent.TimeUnit;
+//import java.util.List;
 //
 ///**
-// * Created by Administrator on 2017/1/13 0013.
+// * Created by Administrator on 2017/1/14 0014.
 // */
-//public class RangeExample {
+//public class BufferExample {
 //
 //    public static void main(String[] args) {
-//        Observable.range(1, 10000)
-//                .subscribe(new Observer<Integer>() {
+//        Observable.just(1,2,3,4).repeat(10)
+//                .buffer(2,3)
+//                .subscribe(new Subscriber<List<Integer>>() {
 //                    @Override
 //                    public void onCompleted() {
 //                        System.out.println("onCompleted()");
@@ -26,8 +25,8 @@
 //                    }
 //
 //                    @Override
-//                    public void onNext(Integer integer) {
-//                        System.out.println("" + integer);
+//                    public void onNext(List<Integer> integers) {
+//                        System.out.println(integers.toString());
 //                    }
 //                });
 //    }
