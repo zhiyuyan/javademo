@@ -1,0 +1,2 @@
+普通字符串
+io.RedirectOut@4554617c

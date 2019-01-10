@@ -1,0 +1,2 @@
+普通字符串
+io.PrintStreamTest@4554617c
